@@ -39,11 +39,10 @@
 
 <script src="https://unpkg.com"></script>
 <script>
-function startGame3D() {
   if (typeof THREE === 'undefined') {
-    document.getElementById('tip').innerHTML = '❌ Error cargando motor 3D. Revisa tu conexión.';
-    return;
+    document.write('<script src="https://jsdelivr.net"><\/script>');
   }
+</script>
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x1a103c);
